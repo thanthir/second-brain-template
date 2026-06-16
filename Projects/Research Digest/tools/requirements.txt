@@ -1,0 +1,5 @@
+# fetch-url.py is stdlib-only — nothing required for the default path.
+#
+# Uncomment if you extend the tool (e.g. nicer HTML extraction or an LLM summary):
+# requests
+# beautifulsoup4

@@ -1,0 +1,11 @@
+{
+  "userIgnoreFilters": [
+    "tools/",
+    ".tmp/",
+    ".env",
+    "credentials.json",
+    "token.json"
+  ],
+  "detectAllExtensions": false,
+  "showUnsupportedFiles": false
+}

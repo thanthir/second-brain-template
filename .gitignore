@@ -1,0 +1,8 @@
+# WAT execution-plane machinery — never sync secrets or disposable intermediates
+**/.tmp/
+**/.env
+**/credentials.json
+**/token.json
+**/__pycache__/
+**/*.pyc
+**/.venv/
