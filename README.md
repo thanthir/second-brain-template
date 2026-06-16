@@ -11,10 +11,11 @@ It ships the full machinery (conventions, manual, templates, config) plus **one 
 
 ## Quickstart
 
-1. **Clone** this repo to wherever you keep notes:
+1. **Get the files** — either clone with git:
    ```
    git clone https://github.com/thanthir/second-brain-template.git "Second Brain" && cd "Second Brain"
    ```
+   **No git?** On the repo page click **`< > Code` → Download ZIP**, unzip it, and rename the `second-brain-template-main` folder to `Second Brain`. (The ZIP includes the hidden `.obsidian/` config and `.env.example`; gitignored files like real `.env`/`.tmp/` are correctly left out. You can always `git init` later if you change your mind.)
 2. **Open in Obsidian:** *Open folder as vault* → select this folder.
 3. **Enable Dataview:** Settings → Community plugins → turn off Restricted mode → install **[Dataview](https://github.com/blacksmithgu/obsidian-dataview)** → enable it. (It powers the live queries on [Home](Home.md). The bundled `.obsidian/` config already lists it and hides `tools/`/`.tmp/`/`.env` from the file explorer.)
 4. **Point your agent at the folder:** open this folder in **Claude Code** (or your AI app, e.g. Cowork). The root [`CLAUDE.md`](CLAUDE.md) auto-loads the vault rules.
