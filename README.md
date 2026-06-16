@@ -13,7 +13,7 @@ It ships the full machinery (conventions, manual, templates, config) plus **one 
 
 1. **Clone** this repo to wherever you keep notes:
    ```
-   git clone <your-repo-url> "Second Brain" && cd "Second Brain"
+   git clone https://github.com/thanthir/second-brain-template.git "Second Brain" && cd "Second Brain"
    ```
 2. **Open in Obsidian:** *Open folder as vault* → select this folder.
 3. **Enable Dataview:** Settings → Community plugins → turn off Restricted mode → install **[Dataview](https://github.com/blacksmithgu/obsidian-dataview)** → enable it. (It powers the live queries on [Home](Home.md). The bundled `.obsidian/` config already lists it and hides `tools/`/`.tmp/`/`.env` from the file explorer.)
@@ -77,10 +77,12 @@ Run it once, read how the pieces connect, then delete it or repurpose it.
 
 ## Publishing your own copy
 
-This template ships with no git history of your content. To put your vault on GitHub:
+This template ships with no git history of your content. To put your own vault on GitHub, create an empty repo on GitHub (no README/license/.gitignore) and push:
 
 ```
-gh repo create second-brain-template --public --source . --remote origin --push
+git remote add origin https://github.com/<your-username>/<your-repo>.git
+git branch -M main
+git push -u origin main
 ```
 
 `.env`, `.tmp/`, credentials, and Python caches are gitignored — secrets and disposable intermediates never leave your machine.
